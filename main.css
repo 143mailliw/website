@@ -1,0 +1,102 @@
+body {
+    background: #0a0a0f;
+    color: #f4f4f5;
+    display: flex;
+    font-family: "Iosevka Extended", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.home-contents {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.feather {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+h1 {
+    font-size: 24pt;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.header {
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+p {
+    font-size: 11pt;
+}
+
+.project {
+    max-width: 600px;
+}
+
+a {
+    color: #4e4ef5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f4f4f5;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #f4f4f5;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #a4a8f5;
+    text-decoration: underline;
+}
+
+.project-links {
+    margin-top: 0.25rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.old-stuff {
+    margin-top: 0.25rem;
+}
+
+.project-date {
+    font-size: 11pt;
+    margin-bottom: 0.25rem;
+}
+
+summary {
+    font-size: 11pt;
+    margin-bottom: 0.25rem;
+}
