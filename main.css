@@ -2,11 +2,12 @@ body {
     background: #0a0a0f;
     color: #f4f4f5;
     display: flex;
-    font-family: "Iosevka Extended", sans-serif;
+    font-family: "Iosevka Web", sans-serif;
     width: 100vw;
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
+    font-stretch: expanded;
 }
 
 .home-contents {
