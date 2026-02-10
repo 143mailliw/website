@@ -140,9 +140,19 @@ a:visited {
     font-weight: 950;
 }
 
-.project-title:active .project-name {
+.project-title:active .project-name,
+.project:open .project-name {
     letter-spacing: 0.01rem;
     font-weight: 500;
+}
+
+.project:open .project-title:hover .project-name {
+    letter-spacing: 0.01rem;
+    font-weight: 300;
+}
+
+.project:open .project-title:active .project-name {
+    font-weight: 700;
 }
 
 .project-date {
