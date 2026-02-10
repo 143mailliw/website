@@ -4,81 +4,113 @@ layout: base
 
 <div class="home-contents">
     <div class="header">
-        <h1>william341</h1>
-        <div class="links"><a href="https://blogs.mailliw.org">blog</a> <a href="https://github.com/143mailliw">github</a> matrix: @143mailliw:chat.mailliw.org</div>
+        <h1>William Whittaker</h1>
     </div>
-    <h2>projects</h2>
+    <div>
+        <p>
+            I'm a software developer and hobbyist game developer.
+        </p>
+        <p>
+            My goal is to design software for people who don't want software.
+            I don't like my computer, and if you're designing software, you shouldn't either. <input id="what" type="checkbox" class="hidden"> <label class="collapsable-button" for="what">[what?]</label>
+            <span id="what-display">
+                <span class="like-paragraph">
+                    <strong>Obviously, you're allowed to like your computer.</strong>
+                </span>
+                <span class="like-paragraph">
+                    The real problem isn't whether or not you enjoy using your computer. The issue is that (and this is
+                    abundantly clear to anyone who's used most open-source software projects), if you like your
+                    computer you're more likely to tolerate it when it does something that is unpleasant, and that's a
+                    problem if you're in UX design because you aren't really supposed to be making software for the
+                    people who enjoy using Vim. They already have Vim. People who like their computer are really good
+                    at making their own software.
+                </span>
+                <span>
+                    Of course, if you're working on Vim, this is a different situation. But if you're working on a
+                    music player, or a web browser, or an email client, you should be cognizant of the fact that your
+                    users probably don't care all that much that the new version is 5% faster and comes with new
+                    keybinds that allow you to do 10% more things without leaving the keyboard. There's a good chance
+                    they'd just like it to get out of the way.
+                </span>
+            </span>
+        </p>
+    </div>
+    <hr>
     <div class="projects">
-        <div class="project">
-            <h3>hummingbird</h3>
+        <details class="project">
+            <summary class="project-title">
+                <h3 class="project-name lexend">Hummingbird</h3>
+                <h4 class="project-date">2024-&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+            </summary>
             <div>
-                <p>
-                    hummingbird is a fully-native, performant cross-platform
-                    (macOS, Linux, Windows) music player written in
-                    Rust, using GPUI. it's focused on usability,
-                    features, and extensibility.
-                </p>
-                <p class="project-links">
-                    <a href="https://github.com/143mailliw/hummingbird"
-                        >source code</a
-                    >,
-                    <a
-                        href="https://github.com/143mailliw/hummingbird/releases/tag/latest"
-                        >ci builds</a
-                    >
-                </p>
-            </div>
-        </div>
-        <div class="project">
-            <h3>boing</h3>
-            <div>
-                <p>
-                    boing is Super Smash Bros. meets Ricochet meets Team Fortress 2.<br>
-                    stuck in development hell since 2022, mainly due to engine issues.
-                </p>
-            </div>
-        </div>
-        <details class="old-stuff">
-            <summary>old stuff</summary>
-            <div class="projects">
-                <div class="project">
-                    <h3>starship</h3>
-                    <div class="project-date">2020-2025</div>
-                    <div>
-                        <p>
-                            starship was a groupware meets social networking platform. it was built using GraphQL, React, and Node.js.
-                            it was designed to allow users to create communities and share content easily among groups.
-                        </p>
-                        <p class="project-links">
-                            <a href="https://github.com/starshipapp/starship-web-client"
-                                >client</a
-                            >,
-                            <a
-                                href="https://github.com/starshipapp/starship-server"
-                                >server</a
-                            >,
-                            <a
-                                href="https://github.com/143mailliw/starship-server-rs"
-                                >abandoned rust rewrite</a
-                            >
-                        </p>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3>laser studio</h3>
-                    <div class="project-date">2022</div>
-                    <div>
-                        <p>
-                            laser studio was an IDE for Tower Unite laser expressions. it includes a documentation viewer, basic code editor,
-                            an execution environment, and a debugger.
-                        </p>
-                        <p class="project-links">
-                            <a href="https://github.com/143mailliw/laser_studio_rs"
-                                >source code (broken)</a
-                            >
-                    </div>
-                </div>
+            <p>
+                Hummingbird is a cross-platform open-source music player designed to be fast and efficient while still adhering to
+                modern design and usability standards. It's written in Rust, with the GPUI framework.
+            </p>
+
+            <p>
+                You can find the latest release on <a href="https://github.com/hummingbird-player/hummingbird/releases">GitHub</a>,
+                as well as the source code. The latest commit is also available from CI.
+            </p>
             </div>
         </details>
+        <details class="project">
+            <summary class="project-title">
+                <h3 class="project-name">boing!</h3>
+                <h4 class="project-date">2022-&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+            </summary>
+            <div>
+            <p>
+                Boing is a physics-based first-person shooter - think TF2 meets Smash Bros. The idea for the game came from a
+                night of playing Ricochet.
+            </p>
+
+            <p>
+                This project is perpetually in early stages of development, but I do plan to release it at some point. Right now,
+                I'm waiting for Godot.
+            </p>
+            </div>
+        </details>
+        <details class="project">
+            <summary class="project-title old">
+                <h3 class="project-name lato">starship</h3>
+                <h4 class="project-date">2020-2025</h4>
+            </summary>
+            <div>
+                <p>
+                    Starship was a groupware-meets-social-networking platform that aimed to give people a place to express themselves.
+                    Users could create "planets" (groups) that had "components" (forums, wikis, blogs, etc.).
+                </p>
+                <p>
+                    Later versions of this project planned to implement a new component system that allowed for users to create
+                    custom components using a WYSIWYG editor (think Squarespace's modern page editor, but with support for more
+                    interactivity). This was abandoned due to scope issues.
+                </p>
+            </div>
+        </details>
+        <details class="project">
+            <summary class="project-title old">
+                <h3 class="project-name">Laser Studio</h3>
+                <h4 class="project-date">2022</h4>
+            </summary>
+            <div>
+                <p>
+                    Laser Studio was an IDE for developing Tower Unite laser projector expressions. It provided extensive
+                    debugging tools, documentation, and a custom runtime environment for executing expressions.
+                </p>
+                <p>
+                    This project was my first Rust project - it was left behind in favor of Starship.
+                </p>
+            </div>
+        </details>
+    </div>
+    <hr>
+    <div class="contact">
+        <a class="contact-link" href="https://github.com/143mailliw"><i class="fa-brands fa-github"></i></a>
+        <a class="contact-link" href="https://patreon.com/c/william341"><i class="fa-brands fa-patreon"></i></a>
+        <div class="contact-right">
+            @143mailliw:chat.mailliw.org
+            <a href="https://blogs.mailliw.org">blog</a>
+        </div>
     </div>
 </div>
