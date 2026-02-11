@@ -9,7 +9,6 @@ body {
     overflow-x: hidden;
     font-stretch: expanded;
     font-weight: 500;
-    font-size: 12pt;
 }
 
 .home-contents {
@@ -17,21 +16,12 @@ body {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    max-width: 600px;
-}
-
-.feather {
-    width: 24px;
-    height: 24px;
-    stroke: currentColor;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: none;
+    padding-top: 3rem;
+    max-width: 38rem;
 }
 
 h1 {
-    font-size: 32pt;
+    font-size: 2.5rem;
     line-height: 100%;
     font-weight: 800;
     margin-bottom: 0.5rem;
@@ -45,20 +35,17 @@ h1 {
 h2 {
     font-weight: 700;
     margin-bottom: 0.5rem;
+    font-size: 2rem;
 }
 
 h3 {
     margin: 0;
     font-weight: 700;
-    font-size: 32pt;
-}
-
-h4 {
-    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 .project {
-    max-width: 600px;
+    max-width: 38rem;
 }
 
 p,
@@ -121,7 +108,8 @@ a:visited {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 -0.075rem;
+    padding: 0.25rem 0;
+    margin: 0 -0.1rem;
     font-weight: 700;
     transition: font-weight 0.2s ease-in-out;
     cursor: pointer;
@@ -134,6 +122,7 @@ a:visited {
     transition:
         font-weight 0.1s ease-in-out,
         letter-spacing 0.1s ease-in-out;
+    font-size: 2.5rem;
 }
 
 .project-title:hover .project-name {
@@ -157,14 +146,13 @@ a:visited {
 }
 
 .project-date {
-    font-size: 28pt;
+    font-size: 2rem;
     font-weight: 700;
     color: #afafb4;
     font-family: "Geist Mono", monospace;
 }
 
 summary {
-    font-size: 11pt;
     margin-bottom: 0.25rem;
 }
 
@@ -197,7 +185,7 @@ hr {
     display: flex;
     gap: 4px;
     justify-content: center;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .contact a.contact-link {
@@ -231,7 +219,7 @@ hr {
     flex-direction: column;
     align-items: end;
     width: 100%;
-    font-size: 11pt;
+    font-size: 0.75rem;
 }
 
 .old .project-name {
@@ -244,4 +232,10 @@ hr {
 
 details div {
     margin-top: 0.25rem;
+}
+
+@media (hover: none) and (pointer: coarse) {
+    html {
+        font-size: 18pt;
+    }
 }
