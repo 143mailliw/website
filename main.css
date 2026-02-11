@@ -16,6 +16,7 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
+    padding: 1rem;
     max-width: 600px;
 }
 
@@ -176,10 +177,10 @@ summary {
 }
 
 #what:checked + .collapsable-button + #what-display {
-    padding: 0.5rem 0;
+    margin-top: 1rem;
+    padding-top: 1rem;
     display: block;
     border-top: 1px solid #4a4a4f;
-    border-bottom: 1px solid #4a4a4f;
 }
 
 #what-display {
@@ -243,6 +244,4 @@ hr {
 
 details div {
     margin-top: 0.25rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #4a4a4f;
 }
