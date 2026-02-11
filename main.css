@@ -238,4 +238,7 @@ details div {
     html {
         font-size: 18pt;
     }
+    .home-contents {
+        margin-bottom: 1rem;
+    }
 }
